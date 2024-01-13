@@ -1,0 +1,35 @@
+﻿.footerlinks {
+    text-decoration: none !important;
+    color: aliceblue
+}
+.footerlinks:hover{
+    color:black;
+}
+.grid-padding{
+    padding:15px;
+    
+}
+.grid-top-padding{
+    padding-top:15px;
+    padding-left:15px;
+    padding-right:15px;
+}
+.grid-bottom-padding {
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ .navbar > .nav-item > .nav-link > a{
+    text-decoration:none;
+    color:none;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+.ml-2 {
+    margin-left: 2px !important;
+}
+.backGround {
+    background-color:black;
+}

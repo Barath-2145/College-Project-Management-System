@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site5.master.cs" Inherits="CollegeProjectManagementSystem.Site5" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- bootStrap -->
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- dataTables css -->
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!-- fontAwesome css -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <!-- CustomStyles -->
+    <link href="css/CustomStyles.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <!-- popper js -->
+    <script src="Bootstrap/js/popper.min.js"></script>
+    <!-- booStrap js -->
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="overflow-x:hidden;">
+    <form id="form1" runat="server">
+        <div >
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="images/project1.jpg" width="80" height="80" />
+                   CPMS
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="homePage.aspx">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terms</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        
+                        <li class="nav-item active">
+                            <asp:LinkButton Class="nav-link" ID="linkButton3" runat="server" OnClick="linkButton3_Click"    >
+                            Departments &nbsp
+                        </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton Class="nav-link" ID="linkButton11" runat="server" OnClick="linkButton11_Click"   >
+                            Faculty  &nbsp
+                        </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton Class="nav-link" ID="linkButton2" runat="server"  >
+                            Batch Details  &nbsp
+                        </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton Class="nav-link" ID="linkButton4" runat="server"   >
+                            Student Details  &nbsp
+                        </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="logOutBtn" runat="server" OnClick="logOutBtn_Click"  >
+                                Logout
+                            </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton Class="nav-link" ID="linkButton13" runat="server" OnClick="linkButton13_Click"   >
+                            View Project Details  &nbsp
+                        </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton Class="nav-link" ID="linkButton14" runat="server"   >
+                            View Old Projects  &nbsp
+                        </asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="linkButton5" runat="server">
+                                Hello User
+                            </asp:LinkButton>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </nav>
+        </div>
+        <!-- main content placeHolder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- main content placeHolder -->
+
+
+        <!-- Footer -->
+        <footer ID="footer1" class="text-center text-white" style="background-color: #0a4275;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <p>
+                        <asp:LinkButton Class="footerlinks" ID="linkButton6" runat="server"    >
+                            Departments || &nbsp
+                        </asp:LinkButton>
+                        <asp:LinkButton Class="footerlinks" ID="linkButton1" runat="server"   >
+                            Faculty || &nbsp
+                        </asp:LinkButton>
+                        <asp:LinkButton Class="footerlinks" ID="linkButton7" runat="server"  >
+                            Batch Details || &nbsp
+                        </asp:LinkButton>
+                        <asp:LinkButton Class="footerlinks" ID="linkButton8" runat="server"   >
+                            Student Details  || &nbsp
+                        </asp:LinkButton>
+                        <asp:LinkButton Class="footerlinks" ID="linkButton10" runat="server"   >
+                            View Project Details  || &nbsp
+                        </asp:LinkButton>
+                        <asp:LinkButton Class="footerlinks" ID="linkButton12" runat="server"   >
+                            View Old Projects  || &nbsp
+                        </asp:LinkButton>
+                        <asp:LinkButton Class="footerlinks" ID="linkButton9" runat="server"  >
+                            HomePage  &nbsp
+                        </asp:LinkButton>
+                        <!-- <asp:LinkButton Class="footerlinks" ID="linkButton10" runat="server" >
+                            Member Management &nbsp
+                        </asp:LinkButton> -->
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright:
+      <a class="text-white" href="#">Barath & Arun</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </form>
+</body>
+</html>
